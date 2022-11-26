@@ -1,11 +1,16 @@
 
 const btn1 = document.querySelector('.button1');
 
+btn1.addEventListener('click', () => 
+{
+    window.location.assign('/index.html');
+})
 
 
-btn1.addEventListener('click', () => {
+const btn2 = document.querySelector('.button2');
 
-window.location.assign('/index.html');
-
+btn2.addEventListener('click', () => 
+{
+    window.location.assign('/aboutus.html');
 })
 
