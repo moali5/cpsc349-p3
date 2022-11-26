@@ -18,5 +18,6 @@ const btn3 = document.querySelector('.button3');
 
 btn3.addEventListener('click', () => 
 {
+    event.stopPropagation();
     window.location.assign('/game.html');
 })
