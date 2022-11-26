@@ -14,3 +14,9 @@ btn2.addEventListener('click', () =>
     window.location.assign('/aboutus.html');
 })
 
+const btn3 = document.querySelector('.button3');
+
+btn3.addEventListener('click', () => 
+{
+    window.location.assign('/game.html');
+})
