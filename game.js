@@ -6,13 +6,13 @@ const id = document.querySelector('#hidden')
 const id3 = document.querySelectorAll('#hidden3')
 
 btn1.addEventListener('click', () => {
-  window.location.assign('/index.html')
+  window.location.assign('/cpsc349-p3/index.html')
 })
 
 const btn2 = document.querySelector('.button2')
 
 btn2.addEventListener('click', () => {
-  window.location.assign('/aboutus.html')
+  window.location.assign('/cpsc349-p3/aboutus.html')
 })
 
 
@@ -21,7 +21,7 @@ const btn3 = document.querySelector('.button3')
 
 btn3.addEventListener('click', () => 
 {
- // window.location.assign('/game.html')
+ // window.location.assign('/cpsc349-p3/game.html')
 
   id.classList.remove('hidden')
 
@@ -76,7 +76,7 @@ const winImage = document.querySelectorAll('img')
 rock.addEventListener('click', () => {
   const computer = Math.floor(Math.random() * 3) + 1
   
-  winImage[0].src= '/rock.png'
+  winImage[0].src= '/cpsc349-p3/rock.png'
 
   for(let i=0; i <id3.length; i++)
  {
@@ -90,21 +90,21 @@ rock.addEventListener('click', () => {
     winMess.textContent = 'Its a Draw'
     winMess2.textContent = totalHuman
     winMess3.textContent = totalAi
-    winImage[1].src= '/rock.png'
+    winImage[1].src= '/cpsc349-p3/rock.png'
   } else if (computer === 2) {
     totalHuman += 2
     winMess1.textContent = text1.value
     winMess.textContent = 'you win'
     winMess2.textContent = totalHuman
     winMess3.textContent = totalAi
-    winImage[1].src= '/scissor.png'
+    winImage[1].src= '/cpsc349-p3/scissor.png'
   } else if (computer === 3) {
     totalAi += 2
     winMess1.textContent = ""
     winMess.textContent = 'AI wins'
     winMess2.textContent = totalHuman
     winMess3.textContent = totalAi
-    winImage[1].src= '/paper.png'
+    winImage[1].src= '/cpsc349-p3/paper.png'
   }
 })
 
@@ -116,7 +116,7 @@ rock.addEventListener('click', () => {
 paper.addEventListener('click', () => {
   const computer = Math.floor(Math.random() * 3) + 1
 
-  winImage[0].src= '/paper.png'
+  winImage[0].src= '/cpsc349-p3/paper.png'
 
   for(let i=0; i <id3.length; i++)
   {
@@ -129,14 +129,14 @@ paper.addEventListener('click', () => {
     winMess.textContent = 'Ai Wins'
     winMess2.textContent = totalHuman
     winMess3.textContent = totalAi
-    winImage[1].src= '/scissor.png'
+    winImage[1].src= '/cpsc349-p3/scissor.png'
   } else if (computer === 1) {
     totalHuman += 2
     winMess1.textContent = text1.value
     winMess.textContent = 'you win'
     winMess2.textContent = totalHuman
     winMess3.textContent = totalAi
-    winImage[1].src= '/rock.png'
+    winImage[1].src= '/cpsc349-p3/rock.png'
   } else if (computer === 3) {
     totalAi += 1
     totalHuman += 1
@@ -144,7 +144,7 @@ paper.addEventListener('click', () => {
     winMess.textContent = 'its a Draw'
     winMess2.textContent = totalHuman
     winMess3.textContent = totalAi
-    winImage[1].src= '/paper.png'
+    winImage[1].src= '/cpsc349-p3/paper.png'
   }
 })
 
@@ -154,7 +154,7 @@ paper.addEventListener('click', () => {
 scissor.addEventListener('click', () => {
   const computer = Math.floor(Math.random() * 3) + 1
 
-  winImage[0].src= '/scissor.png'
+  winImage[0].src= '/cpsc349-p3/scissor.png'
 
   for(let i=0; i <id3.length; i++)
   {
@@ -167,7 +167,7 @@ scissor.addEventListener('click', () => {
     winMess.textContent = 'You win'
     winMess2.textContent = totalHuman
     winMess3.textContent = totalAi
-    winImage[1].src= '/paper.png'
+    winImage[1].src= '/cpsc349-p3/paper.png'
   } else if (computer === 2) {
     totalHuman += 1
     totalAi += 1
@@ -175,14 +175,14 @@ scissor.addEventListener('click', () => {
     winMess1.textContent = text1.value
     winMess2.textContent = totalHuman
     winMess3.textContent = totalAi
-    winImage[1].src= '/scissor.png'
+    winImage[1].src= '/cpsc349-p3/scissor.png'
   } else if (computer === 1) {
     totalAi += 2
     winMess1.textContent = ""
     winMess.textContent = 'AI wins'
     winMess2.textContent = totalHuman
     winMess3.textContent = totalAi
-    winImage[1].src= '/rock.png'
+    winImage[1].src= '/cpsc349-p3/rock.png'
   }
 })
 
