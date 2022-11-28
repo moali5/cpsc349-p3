@@ -14,7 +14,8 @@
 
   <title>Rock Paper Scissor</title>
 
-  <link rel="stylesheet" type="text/css" href="/cpsc349-p3/main.css">
+  <link rel="stylesheet" type="text/css" href="/main.css">
+  <link rel="stylesheet" type="text/css" href="/my.css">
 
 </head>
 
@@ -26,14 +27,14 @@
 <!--===========================header====================================================-->
 <header>
 
-  <h1 class="container mx-auto text-white text-xl text-center bg-indigo-500 shadow-lg shadow-indigo-500 p-3 rounded-md m-4">GAME</h1>
+  <h1 class="container mx-auto text-white text-xl text-center bg-indigo-500 shadow-lg shadow-indigo-500 p-3 rounded-md m-4 text-3xl">GAME</h1>
 
   <div class="flex space-x-2 justify-center p-8">
     <div>
       <button type="button" class="button1 inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-lg hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">HOME</button>
       <button type="button" class="button2 inline-block px-6 py-2.5 bg-purple-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-purple-700 hover:shadow-lg focus:bg-purple-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-purple-800 active:shadow-lg transition duration-150 ease-in-out">About Us</button>
-      <button type="button" class="button3 inline-block px-6 py-2.5 bg-green-500 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-green-600 hover:shadow-lg focus:bg-green-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-700 active:shadow-lg transition duration-150 ease-in-out">GAME</button>
-      
+      <button type="button" class="button3 inline-block px-6 py-2.5 bg-green-500 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-green-600 hover:shadow-lg focus:bg-green-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-700 active:shadow-lg transition duration-150 ease-in-out">START</button>
+      <button class="button4 flex inline-block px-6 py-2.5 bg-orange-500 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-orange-900 hover:shadow-lg focus:bg-orange-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-orange-600 active:shadow-lg transition duration-150 ease-in-out ">========= Change BG Color ========</button>
     </div>
   </div>
 
@@ -48,24 +49,51 @@
 
 <main>
 
+  <div id="hidden" class="hidden display-win-pic flex space-x-2 justify-center p-2 shadow-lg m-2">
+
+    
+      
+        <label for="name">Enter Your Name: </label>
+
+        <input class="text-black name"  type="text"  placeholder="your name">
+    
+        <input value="Submit"  type="button" class=" btn inline-block px-6 py-2.5 bg-gray-800 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-gray-900 hover:shadow-lg focus:bg-gray-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-900 active:shadow-lg transition duration-150 ease-in-out">
+      
+  
+  </div>
+
+
+
+
+
 <div class="display-win-pic flex space-x-2 justify-center p-8 shadow-lg ">
 
-  <div></div>
-  <div class="human-score item w-60 h-52 rounded shadow-lg bg-yellow-100 text-xl text-black text-center">HUMAN<br>Total Score<br></div>
-  <div class="winMessage item w-60 h-52 rounded shadow-lg bg-white text-black text-xl text-center">Please Pick<br>you choice<br>ROCK<br>paper<br>SCISSOR </div>
-  <div class="ai-score item w-60 h-52 rounded shadow-lg bg-yellow-100 text-black text-xl text-center">AI<br>Total Score<br></div>
-  <div></div>
+  <div id="hidden3" class="hidden inline-block px-6 py-2.5 bg-red-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-lg hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out p6"><img src="/paper.png"></div>
+
+  
+
+  <div id="hidden2" class="hidden text-3xl item w-60 h-52 rounded shadow-lg bg-yellow-100 text-xl text-black text-center">
+      <p class="playername ">Human</p><br>Total Score<br><p class="winMessage2"></p>
+  </div>
+  <div class="text-2xl item w-60 h-52 rounded shadow-lg bg-white text-black text-xl text-center">
+    <p class="winMessage1"></p><br><ul class="winMessage winMessage4">Please Click<br>The START<br>Button<br>To Start<br>The Game</ul>
+  </div>
+  <div id="hidden2" class="hidden ai-score text-3xl item w-60 h-52 rounded shadow-lg bg-yellow-100 text-black text-xl text-center">
+    AI<br>Total Score<br><p class="winMessage3"></p>
+  </div>
 
 
+
+  <div id="hidden3" class="hidden inline-block px-6 py-2.5 bg-red-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-lg hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out p6"><img src="/paper.png"></div>
 </div>
 
 
 
-<div class="flex space-x-2 justify-center p-8 shadow-lg">
+<div id="hidden2" class="hidden flex space-x-2 justify-center p-8 shadow-lg">
  
-    <button type="button" Class="rock inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-lg hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"><img src="/cpsc349-p3/rock.png"></button>
-    <button type="button" Class="paper inline-block px-6 py-2.5 bg-purple-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-lg hover:bg-purple-700 hover:shadow-lg focus:bg-purple-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-purple-800 active:shadow-lg transition duration-150 ease-in-out"><img src="/cpsc349-p3/paper.png"></button>
-    <button type="button"Class="scissor inline-block px-6 py-2.5 bg-green-500 text-white font-medium text-xs leading-tight uppercase rounded shadow-lg hover:bg-green-600 hover:shadow-lg focus:bg-green-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-700 active:shadow-lg transition duration-150 ease-in-out"><img src="/cpsc349-p3/scissor.png"></Button>
+    <button type="button" Class="rock inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-lg hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"><img src="/rock.png"></button>
+    <button type="button" Class="paper inline-block px-6 py-2.5 bg-purple-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-lg hover:bg-purple-700 hover:shadow-lg focus:bg-purple-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-purple-800 active:shadow-lg transition duration-150 ease-in-out"><img src="/paper.png"></button>
+    <button type="button"Class="scissor inline-block px-6 py-2.5 bg-green-500 text-white font-medium text-xs leading-tight uppercase rounded shadow-lg hover:bg-green-600 hover:shadow-lg focus:bg-green-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-700 active:shadow-lg transition duration-150 ease-in-out"><img src="/scissor.png"></Button>
 
 </div>
 
@@ -84,9 +112,9 @@
   <nav class="flex space-x-2 justify-center p-6">
     <div class="">
         |&nbsp;  
-         <a class="hover:text-blue-300" href="/cpsc349-p3/index.html">HOME</a>  	&nbsp;|	 	&nbsp;
-         <a class="hover:text-blue-300" href="/cpsc349-p3/aboutus.html">About Us</a> 	&nbsp;| 	&nbsp;
-         <a class="hover:text-blue-300" href="/cpsc349-p3/game.html">GAME</a>  &nbsp;| 	&nbsp;
+         <a class="hover:text-blue-300" href="/index.html">HOME</a>  	&nbsp;|	 	&nbsp;
+         <a class="hover:text-blue-300" href="/aboutus.html">About Us</a> 	&nbsp;| 	&nbsp;
+         <a class="hover:text-blue-300" href="/game.html">GAME</a>  &nbsp;| 	&nbsp;
          
     </div>
  </nav>
@@ -96,7 +124,7 @@
 
 
 
- <script type='module' src="/cpsc349-p3/game.js"></script>
+ <script type='module' src="/game.js"></script>
 </body>
 
 </html>

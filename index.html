@@ -14,8 +14,8 @@
 
   <title>Rock Paper Scissor</title>
 
-  <link rel="stylesheet" type="text/css" href="/cpsc349-p3/main.css">
-
+  <link rel="stylesheet" type="text/css" href="/main.css">
+  <link rel="stylesheet" type="text/css" href="/my.css">
 </head>
 
 
@@ -26,14 +26,14 @@
 <!--===========================header====================================================-->
 <header>
 
-  <h1 class="container mx-auto text-white text-xl text-center bg-indigo-500 shadow-lg shadow-indigo-500 p-3 rounded-md m-4">Rock Paper Scissor</h1>
+  <h1 class="container mx-auto text-white text-5xl text-center bg-indigo-500 shadow-lg shadow-indigo-500 p-3 rounded-md m-4">Rock Paper Scissor</h1>
 
   <div class="flex space-x-2 justify-center p-6">
     <div>
       <button class="button1 inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">HOME</button>
       <button class="button2 inline-block px-6 py-2.5 bg-purple-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-purple-700 hover:shadow-lg focus:bg-purple-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-purple-800 active:shadow-lg transition duration-150 ease-in-out" >About Us</button>
       <button class="button3 inline-block px-6 py-2.5 bg-green-500 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-green-600 hover:shadow-lg focus:bg-green-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-700 active:shadow-lg transition duration-150 ease-in-out">GAME</button>
-    
+      <button class="button4 flex inline-block px-6 py-2.5 bg-orange-500 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-orange-900 hover:shadow-lg focus:bg-orange-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-orange-600 active:shadow-lg transition duration-150 ease-in-out ">========= Change BG Color ========</button>
     </div>
   </div>
 
@@ -46,11 +46,45 @@
 
 <!--=============================================main===================================================-->
 
-<main class="item w-60 h-96">
+<main class="flex RPPic">
 
   
+<div> 
+  <article class="display-win-pic flex flex-col space-x-2 justify-center p-8 shadow-lg" >
+  
+  <p class="item rounded shadow-lg bg-yellow-100 text-xl text-black text-center">
+    <em class="font-bold">Rock Paper Scissors</em> is a hand game originating from China, usually 
+  played between two people, in which each player simultaneously forms 
+  one of three shapes with an outstretched hand. These shapes are <em class="font-bold">"Rock" </em>
+  (a closed fist), <em class="font-bold">"Paper"</em> (a flat hand), and <em class="font-bold">"Scissors"</em> (a fist with the 
+  index finger and middle finger extended, forming a V). "Scissors" is 
+  identical to the two-fingered V sign (also indicating "victory" or "peace") 
+  except that it is pointed horizontally instead of being held upright in the air.</p><br>
+
+  <p class="item rounded shadow-lg bg-yellow-100 text-xl text-black text-center">
+    A simultaneous, zero-sum game, it has three possible outcomes: a draw, a win or a loss. 
+  A player who decides to play rock will beat another player who has chosen scissors 
+  ("rock crushes scissors" or "breaks scissors" or sometimes "blunts scissors"[4]), 
+  but will lose to one who has played paper ("paper covers rock"); 
+  a play of paper will lose to a play of scissors ("scissors cuts paper"). 
+  If both players choose the same shape, the game is tied and is usually 
+  immediately replayed to break the tie. The game spread from China while
+  developing different variants in signs over time.</p><br>
+
+   <p class="item rounded shadow-lg bg-yellow-100 text-xl text-black text-center">
+    The first known mention of the game was in the book Wuzazu[zh] 
+    by the Ming-dynasty writer Xie Zhaozhe. who wrote that the game 
+    dated back to the time of the Han dynasty (206 BCE 220 CE).
+    In the book, the game was called shoushiling. Li Rihua's book Note
+    of Liuyanzhai also mentions this game, calling it shoushiling , 
+    huozhitou, or huaquan.</p>
 
 
+</article>
+</div>
+ <div Class="container mx-auto flex w-100 h-96 bg-indigo-500 shadow-lg shadow-indigo-500 p-3 rounded-md m-7">
+  <img src="/RPC.JPG" alt="This picture taken for Wikipedia">
+</div>
 </main>
 
 
@@ -63,19 +97,17 @@
   <nav class="flex space-x-2 justify-center p-6">
     <div class="">
         |&nbsp;  
-         <a class="hover:text-blue-300" href="/cpsc349-p3/index.html">HOME</a>  	&nbsp;|	 	&nbsp;
-         <a class="hover:text-blue-300" href="/cpsc349-p3/aboutus.html">About Us</a> 	&nbsp;| 	&nbsp;
-         <a class="hover:text-blue-300" href="/cpsc349-p3/game.html">GAME</a>  &nbsp;| 	&nbsp;
+         <a class="hover:text-blue-300" href="/index.html">HOME</a>  	&nbsp;|	 	&nbsp;
+         <a class="hover:text-blue-300" href="/aboutus.html">About Us</a> 	&nbsp;| 	&nbsp;
+         <a class="hover:text-blue-300" href="/game.html">GAME</a>  &nbsp;| 	&nbsp;
          
     </div>
  </nav>
 
 </footer>
 
-<div></div>
 
-
- <script type='module' src="/cpsc349-p3/index.js"></script>
+ <script type='module' src="/index.js"></script>
 </body>
 
 </html>
