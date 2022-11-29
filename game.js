@@ -4,24 +4,124 @@ let totalHuman = 0
 const btn1 = document.querySelector('.button1')
 const id = document.querySelector('#hidden')
 const id3 = document.querySelectorAll('#hidden3')
-
-btn1.addEventListener('click', () => {
-  window.location.assign('/index.html')
-})
-
+const idIndexPage = document.querySelector('#indexPage')
+const idGamePage = document.querySelector('#gamePage')
+const idAboutPage = document.querySelector('#aboutPage')
+const idIndexPage1 = document.querySelector('#indexPage1')
+const idGamePage1 = document.querySelector('#gamePage1')
+const idAboutPage1 = document.querySelector('#aboutPage1')
+const text1 = document.querySelector('.name')
+const btn6 = document.querySelector('.btn')
+const pName = document.querySelector('.playername')
+const id2 = document.querySelectorAll('#hidden2')
+const winMess4 = document.querySelector('.winMessage4')
+const rock = document.querySelector('.rock')
+const paper = document.querySelector('.paper')
+const scissor = document.querySelector('.scissor')
+const winMess = document.querySelector('.winMessage')
+const winMess1 = document.querySelector('.winMessage1')
+const winMess2 = document.querySelector('.winMessage2')
+const winMess3 = document.querySelector('.winMessage3')
+const aiScore = document.querySelector('.ai-score')
+const winImage = document.querySelectorAll('img')
+const btn3 = document.querySelector('#resetButton')
+const btn4 = document.querySelector('.button3')
+const hideBtn = document.querySelector('#hideButton')
 const btn2 = document.querySelector('.button2')
 
-btn2.addEventListener('click', () => {
-  window.location.assign('/aboutus.html')
+//=====================================================================
+
+btn1.addEventListener('click', () => {
+  idIndexPage.classList.remove('hidden')
+  idAboutPage.classList.add('hidden')
+  idGamePage.classList.add('hidden')
+
+  hideBtn.classList.remove('hidden')
+  btn3.classList.add('hidden')
+
+  idIndexPage1.classList.remove('hidden')
+  idAboutPage1.classList.add('hidden')
+  idGamePage1.classList.add('hidden')
+
 })
+
+//=================================================================
+
+btn2.addEventListener('click', () => {
+  idIndexPage.classList.add('hidden')
+  idAboutPage.classList.remove('hidden')
+  idGamePage.classList.add('hidden')
+
+  hideBtn.classList.remove('hidden')
+  btn3.classList.add('hidden')
+
+  idIndexPage1.classList.add('hidden')
+  idAboutPage1.classList.remove('hidden')
+  idGamePage1.classList.add('hidden')
+})
+
+//==================================================================
+
+btn4.addEventListener('click', () => 
+{
+  idIndexPage.classList.add('hidden')
+  idAboutPage.classList.add('hidden')
+  idGamePage.classList.remove('hidden')
+
+  hideBtn.classList.add('hidden')
+  btn3.classList.remove('hidden')
+
+  idIndexPage1.classList.add('hidden')
+  idAboutPage1.classList.add('hidden')
+  idGamePage1.classList.remove('hidden')
+
+})
+
+
+
+//==========================================================================
+/* try to use the local storage not working
+when i check the DOM look like its storing 
+the date. but one pulling the date 
+with localStorage.getItem() will work on it on saturday 
+see if you can fix the issue
+
+
+
+const idContinue = document.querySelector('#continue')
+
+idContinue.addEventListener('click', () =>{
+
+      id.classList.remove('hidden')
+
+
+  
+    for(let i=0; i <id2.length; i++)
+    {
+      id2[i].classList.remove('hidden')
+    }
+    for(let i=0; i <id3.length; i++)
+    {
+      id3[i].classList.remove('hidden')
+    }
+  
+    text1.value = localStorage.getItem('name')
+    totalAi = localStorage.getItem('ai')
+    totalHuman = localStorage.getItem('human')
+  
+
+})
+
+*/
+
 
 
 //===========================================================================
-const btn3 = document.querySelector('.button3')
+
 
 btn3.addEventListener('click', () => 
 {
- // window.location.assign('/game.html')
+
 
   id.classList.remove('hidden')
 
@@ -43,7 +143,7 @@ btn3.addEventListener('click', () =>
   }
   winMess4.textContent = "Please Enter"
   const li1 = document.createElement('li')
-  li1.textContent = "Enter Your Name"
+  li1.textContent = "Your Name"
   winMess4.appendChild(li1)
   const li2 = document.createElement('li')
   li2.textContent = "Then Click"
@@ -52,21 +152,11 @@ btn3.addEventListener('click', () =>
   li3.textContent = "The Submit Button"
   winMess4.appendChild(li3)
   const li4 = document.createElement('li')
-  li4.textContent = "To Start The Game"
+  li4.textContent = "To Start New Game"
   winMess4.appendChild(li4)
 
 
 })
-
-const rock = document.querySelector('.rock')
-const paper = document.querySelector('.paper')
-const scissor = document.querySelector('.scissor')
-const winMess = document.querySelector('.winMessage')
-const winMess1 = document.querySelector('.winMessage1')
-const winMess2 = document.querySelector('.winMessage2')
-const winMess3 = document.querySelector('.winMessage3')
-const aiScore = document.querySelector('.ai-score')
-const winImage = document.querySelectorAll('img')
 
 
 
@@ -76,12 +166,13 @@ const winImage = document.querySelectorAll('img')
 rock.addEventListener('click', () => {
   const computer = Math.floor(Math.random() * 3) + 1
   
-  winImage[0].src= '/rock.png'
+  winImage[1].src= '/rock.png'
 
+  if (id3[0].classList.contains('hidden')){
   for(let i=0; i <id3.length; i++)
  {
   id3[i].classList.remove('hidden')
- }
+ }}
     
   if (computer === 1) {
     totalAi += 1
@@ -90,22 +181,27 @@ rock.addEventListener('click', () => {
     winMess.textContent = 'Its a Draw'
     winMess2.textContent = totalHuman
     winMess3.textContent = totalAi
-    winImage[1].src= '/rock.png'
+    winImage[2].src= '/rock.png'
   } else if (computer === 2) {
     totalHuman += 2
     winMess1.textContent = text1.value
     winMess.textContent = 'you win'
     winMess2.textContent = totalHuman
     winMess3.textContent = totalAi
-    winImage[1].src= '/scissor.png'
+    winImage[2].src= '/scissor.png'
   } else if (computer === 3) {
     totalAi += 2
     winMess1.textContent = ""
     winMess.textContent = 'AI wins'
     winMess2.textContent = totalHuman
     winMess3.textContent = totalAi
-    winImage[1].src= '/paper.png'
+    winImage[2].src= '/paper.png'
   }
+
+  localStorage.setItem('Ai', totalAi)
+  localStorage.setItem('human', totalHuman)
+  
+
 })
 
 
@@ -116,12 +212,13 @@ rock.addEventListener('click', () => {
 paper.addEventListener('click', () => {
   const computer = Math.floor(Math.random() * 3) + 1
 
-  winImage[0].src= '/paper.png'
+  winImage[1].src= '/paper.png'
 
+  if (id3[0].classList.contains('hidden')){
   for(let i=0; i <id3.length; i++)
   {
     id3[i].classList.remove('hidden')
-  }
+  }}
 
   if (computer === 2) {
     totalAi += 2
@@ -129,14 +226,14 @@ paper.addEventListener('click', () => {
     winMess.textContent = 'Ai Wins'
     winMess2.textContent = totalHuman
     winMess3.textContent = totalAi
-    winImage[1].src= '/scissor.png'
+    winImage[2].src= '/scissor.png'
   } else if (computer === 1) {
     totalHuman += 2
     winMess1.textContent = text1.value
     winMess.textContent = 'you win'
     winMess2.textContent = totalHuman
     winMess3.textContent = totalAi
-    winImage[1].src= '/rock.png'
+    winImage[2].src= '/rock.png'
   } else if (computer === 3) {
     totalAi += 1
     totalHuman += 1
@@ -144,8 +241,11 @@ paper.addEventListener('click', () => {
     winMess.textContent = 'its a Draw'
     winMess2.textContent = totalHuman
     winMess3.textContent = totalAi
-    winImage[1].src= '/paper.png'
+    winImage[2].src= '/paper.png'
   }
+
+   localStorage.setItem('Ai', totalAi)
+   localStorage.setItem('human', totalHuman)
 })
 
 
@@ -154,12 +254,13 @@ paper.addEventListener('click', () => {
 scissor.addEventListener('click', () => {
   const computer = Math.floor(Math.random() * 3) + 1
 
-  winImage[0].src= '/scissor.png'
+  winImage[1].src= '/scissor.png'
 
+  if (id3[0].classList.contains('hidden')){
   for(let i=0; i <id3.length; i++)
   {
     id3[i].classList.remove('hidden')
-  }
+  }}
 
   if (computer === 3) {
     totalHuman += 2
@@ -167,7 +268,7 @@ scissor.addEventListener('click', () => {
     winMess.textContent = 'You win'
     winMess2.textContent = totalHuman
     winMess3.textContent = totalAi
-    winImage[1].src= '/paper.png'
+    winImage[2].src= '/paper.png'
   } else if (computer === 2) {
     totalHuman += 1
     totalAi += 1
@@ -175,15 +276,18 @@ scissor.addEventListener('click', () => {
     winMess1.textContent = text1.value
     winMess2.textContent = totalHuman
     winMess3.textContent = totalAi
-    winImage[1].src= '/scissor.png'
+    winImage[2].src= '/scissor.png'
   } else if (computer === 1) {
     totalAi += 2
     winMess1.textContent = ""
     winMess.textContent = 'AI wins'
     winMess2.textContent = totalHuman
     winMess3.textContent = totalAi
-    winImage[1].src= '/rock.png'
+    winImage[2].src= '/rock.png'
   }
+
+  localStorage.setItem('Ai', totalAi)
+  localStorage.setItem('human', totalHuman)
 })
 
 
@@ -203,20 +307,22 @@ btn.addEventListener('click', () => {
 })
 
 
-const text1 = document.querySelector('.name')
-const btn6 = document.querySelector('.btn')
-const pName = document.querySelector('.playername')
-const id2 = document.querySelectorAll('#hidden2')
-const winMess4 = document.querySelector('.winMessage4')
+
+
+//===========================================================================
 
 btn6.addEventListener('click', () =>
 {
- pName.innerHTML = text1.value  
+ pName.innerHTML = text1.value 
+ 
+ localStorage.setItem('name', text1.value)
 
  for(let i=0; i <id2.length; i++)
  {
  id2[i].classList.remove('hidden')
  }
+
+
  id.classList.add('hidden')
  winMess4.textContent = 'Please Select'
  const li1 = document.createElement('li')
@@ -229,3 +335,4 @@ btn6.addEventListener('click', () =>
  li3.textContent = "SCISSOR"
  winMess4.appendChild(li3)
 })
+
