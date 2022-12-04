@@ -177,7 +177,7 @@ btn3.addEventListener('click', () =>
 rock.addEventListener('click', () => {
   const computer = Math.floor(Math.random() * 3) + 1
 
-  winImage[1].src= '/rock.png'
+  winImage[1].src= '/cpsc349-p3/rock.png'
 
   if (id3[0].classList.contains('hidden')){
   for(let i=0; i <id3.length; i++)
@@ -192,21 +192,21 @@ rock.addEventListener('click', () => {
     winMess.textContent = 'Its a Draw'
     winMess2.textContent = totalHuman
     winMess3.textContent = totalAi
-    winImage[2].src= '/rock.png'
+    winImage[2].src= '/cpsc349-p3/rock.png'
   } else if (computer === 2) {
     totalHuman += 2
     winMess1.textContent = text1.value
     winMess.textContent = 'you win'
     winMess2.textContent = totalHuman
     winMess3.textContent = totalAi
-    winImage[2].src= '/scissor.png'
+    winImage[2].src= '/cpsc349-p3/scissor.png'
   } else if (computer === 3) {
     totalAi += 2
     winMess1.textContent = ""
     winMess.textContent = 'AI wins'
     winMess2.textContent = totalHuman
     winMess3.textContent = totalAi
-    winImage[2].src= '/paper.png'
+    winImage[2].src= '/cpsc349-p3/paper.png'
   }
 
   localStorage.setItem('Ai', totalAi)
@@ -223,7 +223,7 @@ rock.addEventListener('click', () => {
 paper.addEventListener('click', () => {
   const computer = Math.floor(Math.random() * 3) + 1
 
-  winImage[1].src= '/paper.png'
+  winImage[1].src= '/cpsc349-p3/paper.png'
 
   if (id3[0].classList.contains('hidden')){
   for(let i=0; i <id3.length; i++)
@@ -237,14 +237,14 @@ paper.addEventListener('click', () => {
     winMess.textContent = 'Ai Wins'
     winMess2.textContent = totalHuman
     winMess3.textContent = totalAi
-    winImage[2].src= '/scissor.png'
+    winImage[2].src= '/cpsc349-p3/scissor.png'
   } else if (computer === 1) {
     totalHuman += 2
     winMess1.textContent = text1.value
     winMess.textContent = 'you win'
     winMess2.textContent = totalHuman
     winMess3.textContent = totalAi
-    winImage[2].src= '/rock.png'
+    winImage[2].src= '/cpsc349-p3/rock.png'
   } else if (computer === 3) {
     totalAi += 1
     totalHuman += 1
@@ -252,7 +252,7 @@ paper.addEventListener('click', () => {
     winMess.textContent = 'its a Draw'
     winMess2.textContent = totalHuman
     winMess3.textContent = totalAi
-    winImage[2].src= '/paper.png'
+    winImage[2].src= '/cpsc349-p3/paper.png'
   }
 
    localStorage.setItem('Ai', totalAi)
@@ -265,7 +265,7 @@ paper.addEventListener('click', () => {
 scissor.addEventListener('click', () => {
   const computer = Math.floor(Math.random() * 3) + 1
 
-  winImage[1].src= '/scissor.png'
+  winImage[1].src= '/cpsc349-p3/scissor.png'
 
   if (id3[0].classList.contains('hidden')){
   for(let i=0; i <id3.length; i++)
@@ -279,7 +279,7 @@ scissor.addEventListener('click', () => {
     winMess.textContent = 'You win'
     winMess2.textContent = totalHuman
     winMess3.textContent = totalAi
-    winImage[2].src= '/paper.png'
+    winImage[2].src= '/cpsc349-p3/paper.png'
   } else if (computer === 2) {
     totalHuman += 1
     totalAi += 1
@@ -294,7 +294,7 @@ scissor.addEventListener('click', () => {
     winMess.textContent = 'AI wins'
     winMess2.textContent = totalHuman
     winMess3.textContent = totalAi
-    winImage[2].src= '/rock.png'
+    winImage[2].src= '/cpsc349-p3/rock.png'
   }
 
   localStorage.setItem('Ai', totalAi)
