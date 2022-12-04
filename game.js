@@ -28,7 +28,6 @@ const btn3 = document.querySelector('#resetButton')
 const btn4 = document.querySelector('.button3')
 const hideBtn = document.querySelector('#hideButton')
 const btn2 = document.querySelector('.button2')
-const idContinue = document.querySelector('#continue')
 
 //=====================================================================
 
@@ -85,11 +84,17 @@ btn4.addEventListener('click', () =>
 when i check the DOM look like its storing 
 the date. but one pulling the date 
 with localStorage.getItem() will work on it on saturday 
-see if you can fix the issue*/
-//const idContinue = document.querySelector('#continue')
+see if you can fix the issue
+
+
+
+const idContinue = document.querySelector('#continue')
 
 idContinue.addEventListener('click', () =>{
+
       id.classList.remove('hidden')
+
+
   
     for(let i=0; i <id2.length; i++)
     {
@@ -99,31 +104,15 @@ idContinue.addEventListener('click', () =>{
     {
       id3[i].classList.remove('hidden')
     }
-
-    idIndexPage.classList.add('hidden')
-  idAboutPage.classList.add('hidden')
-  idGamePage.classList.remove('hidden')
-
-  hideBtn.classList.add('hidden')
-  btn3.classList.remove('hidden')
-
-  idIndexPage1.classList.add('hidden')
-  idAboutPage1.classList.add('hidden')
-  idGamePage1.classList.remove('hidden')
   
-    text1.value = localStorage.getItem("name")
-    totalAi =JSON.parse(localStorage.getItem("Ai"))
-    totalHuman = JSON.parse(localStorage.getItem("human"))
-
-    winMess1 = text1.value
-
-    winMess2.textContent = totalHuman
-
-     winMess3.textContent = totalAi
-   
+    text1.value = localStorage.getItem('name')
+    totalAi = localStorage.getItem('ai')
+    totalHuman = localStorage.getItem('human')
   
+
 })
 
+*/
 
 
 
@@ -146,11 +135,11 @@ btn3.addEventListener('click', () =>
     {
       id3[i].classList.add('hidden')
     }
-      /*   totalAi = 0
+         totalAi = 0
          totalHuman = 0
          winMess2.textContent = ""
          winMess3.textContent = ""
-         winMess1.textContent = ""*/
+         winMess1.textContent = ""
   }
   winMess4.textContent = "Please Enter"
   const li1 = document.createElement('li')
@@ -346,9 +335,4 @@ btn6.addEventListener('click', () =>
  li3.textContent = "SCISSOR"
  winMess4.appendChild(li3)
 })
-/*
-text1.value = JSON.parse(localStorage.getItem("name"))
-totalAi = JSON.parse(localStorage.getItem("ai"))
-totalHuman = JSON.parse(localStorage.getItem("human"))
 
-*///====================== slide over
