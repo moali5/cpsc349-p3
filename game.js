@@ -257,7 +257,7 @@ scissor.addEventListener('click', () => {
     winMess1.textContent = text1.value
     winMess2.textContent = totalHuman
     winMess3.textContent = totalAi
-    winImage[2].src = '/scissor.png'
+    winImage[2].src = '/cpsc349-p3/scissor.png'
   } else if (computer === 1) {
     totalAi += 2
     winMess1.textContent = ''
