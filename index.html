@@ -16,53 +16,54 @@
 
   <link rel="stylesheet" type="text/css" href="/main.css">
   <link rel="stylesheet" type="text/css" href="/my.css">
-  <script type='module' src="/game.js"></script>
 </head>
 
 
 <!--=======================================body===============================================-->
 <body class="bg-gray-700 text-fuchsia-50">
-   
+
 
 <!--===========================header====================================================-->
 <header>
 
-  
+  <h1 id="indexPage1" class="container mx-auto text-white text-5xl text-center bg-indigo-500 shadow-lg
+             shadow-indigo-500 p-3 rounded-md m-4">Rock Paper Scissor</h1>
 
-  <h1 id="gamePage1" class="hidden container mx-auto text-white text-xl text-center bg-indigo-500 shadow-lg 
+  <h1 id="gamePage1" class="hidden container mx-auto text-white text-xl text-center bg-indigo-500 shadow-lg
             shadow-indigo-500 p-3 rounded-md m-4 text-3xl">GAME</h1>
 
-  
-  
+  <h1 id="aboutPage1" class="hidden container mx-auto text-white text-xl text-center bg-indigo-500 shadow-lg
+            shadow-indigo-500 p-3 rounded-md m-4 text-3xl">About Us</h1>
+
 
   <div class="flex space-x-2 justify-center p-6">
     <div>
-      <!-- <button class="button1 inline-block px-6 py-2.5 bg-blue-600 text-white font-medium 
-                    text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 
-                    hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none 
-                    focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 
-                    ease-in-out">HOME</button> -->
+      <button class="button1 inline-block px-6 py-2.5 bg-blue-600 text-white font-medium
+                    text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700
+                    hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none
+                    focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150
+                    ease-in-out">HOME</button>
 
-      <button class="button2 inline-block px-6 py-2.5 bg-purple-600 text-white font-medium 
-                     text-xs leading-tight uppercase rounded shadow-md hover:bg-purple-700 
-                     hover:shadow-lg focus:bg-purple-700 focus:shadow-lg focus:outline-none 
-                     focus:ring-0 active:bg-purple-800 active:shadow-lg transition duration-150 
+      <button class="button2 inline-block px-6 py-2.5 bg-purple-600 text-white font-medium
+                     text-xs leading-tight uppercase rounded shadow-md hover:bg-purple-700
+                     hover:shadow-lg focus:bg-purple-700 focus:shadow-lg focus:outline-none
+                     focus:ring-0 active:bg-purple-800 active:shadow-lg transition duration-150
                      ease-in-out" >About Us</button>
 
-      <button id="hideButton" class="button3 inline-block px-6 py-2.5 bg-green-500 text-white font-medium text-xs 
-                     leading-tight uppercase rounded shadow-md hover:bg-green-600 hover:shadow-lg 
-                     focus:bg-green-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-700 
+      <button id="hideButton" class="button3 inline-block px-6 py-2.5 bg-green-500 text-white font-medium text-xs
+                     leading-tight uppercase rounded shadow-md hover:bg-green-600 hover:shadow-lg
+                     focus:bg-green-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-700
                      active:shadow-lg transition duration-150 ease-in-out">GAME</button>
 
-      <button id="resetButton" type="button" class="hidden inline-block px-6 py-2.5 bg-green-500 text-white 
-                     font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-green-600 
-                     hover:shadow-lg focus:bg-green-600 focus:shadow-lg focus:outline-none focus:ring-0 
+      <button id="resetButton" type="button" class="hidden inline-block px-6 py-2.5 bg-green-500 text-white
+                     font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-green-600
+                     hover:shadow-lg focus:bg-green-600 focus:shadow-lg focus:outline-none focus:ring-0
                      active:bg-green-700 active:shadow-lg transition duration-150 ease-in-out">START</button>
 
 
-      <button class="button4 flex inline-block px-6 py-2.5 bg-orange-500 text-white font-medium 
-                    text-xs leading-tight uppercase rounded shadow-md hover:bg-orange-900 hover:shadow-lg 
-                    focus:bg-orange-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-orange-600 
+      <button class="button4 flex inline-block px-6 py-2.5 bg-orange-500 text-white font-medium
+                    text-xs leading-tight uppercase rounded shadow-md hover:bg-orange-900 hover:shadow-lg
+                    focus:bg-orange-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-orange-600
                     active:shadow-lg transition duration-150 ease-in-out ">========= Change BG Color ========</button>
     </div>
   </div>
@@ -78,40 +79,40 @@
 
 
 <!--==============================================index page======================================================-->
-<div  id="indexPage" class="flex RPPic"> 
+<div  id="indexPage" class="flex RPPic">
 
 
 
-<div> 
+<div>
 
   <article class="display-win-pic flex flex-col space-x-2 justify-center p-8 shadow-lg" >
-  
+
   <p class="item rounded shadow-lg bg-yellow-100 text-xl text-black text-center">
-     <em class="font-bold">Rock Paper Scissors</em> is a hand game originating from China, usually 
-     played between two people, in which each player simultaneously forms 
+     <em class="font-bold">Rock Paper Scissors</em> is a hand game originating from China, usually
+     played between two people, in which each player simultaneously forms
      one of three shapes with an outstretched hand. These shapes are <em class="font-bold">"Rock" </em>
-     (a closed fist), <em class="font-bold">"Paper"</em> (a flat hand), and 
-     <em class="font-bold">"Scissors"</em> (a fist with the 
-     index finger and middle finger extended, forming a V). "Scissors" is 
-     identical to the two-fingered V sign (also indicating "victory" or "peace") 
+     (a closed fist), <em class="font-bold">"Paper"</em> (a flat hand), and
+     <em class="font-bold">"Scissors"</em> (a fist with the
+     index finger and middle finger extended, forming a V). "Scissors" is
+     identical to the two-fingered V sign (also indicating "victory" or "peace")
      except that it is pointed horizontally instead of being held upright in the air.</p><br>
 
   <p class="item rounded shadow-lg bg-yellow-100 text-xl text-black text-center">
-     A simultaneous, zero-sum game, it has three possible outcomes: a draw, a win or a loss. 
-     A player who decides to play rock will beat another player who has chosen scissors 
-     ("rock crushes scissors" or "breaks scissors" or sometimes "blunts scissors"[4]), 
-     but will lose to one who has played paper ("paper covers rock"); 
-     a play of paper will lose to a play of scissors ("scissors cuts paper"). 
-     If both players choose the same shape, the game is tied and is usually 
+     A simultaneous, zero-sum game, it has three possible outcomes: a draw, a win or a loss.
+     A player who decides to play rock will beat another player who has chosen scissors
+     ("rock crushes scissors" or "breaks scissors" or sometimes "blunts scissors"[4]),
+     but will lose to one who has played paper ("paper covers rock");
+     a play of paper will lose to a play of scissors ("scissors cuts paper").
+     If both players choose the same shape, the game is tied and is usually
      immediately replayed to break the tie. The game spread from China while
      developing different variants in signs over time.</p><br>
 
    <p class="item rounded shadow-lg bg-yellow-100 text-xl text-black text-center">
-     The first known mention of the game was in the book Wuzazu[zh] 
-     by the Ming-dynasty writer Xie Zhaozhe. who wrote that the game 
+     The first known mention of the game was in the book Wuzazu[zh]
+     by the Ming-dynasty writer Xie Zhaozhe. who wrote that the game
      dated back to the time of the Han dynasty (206 BCE 220 CE).
      In the book, the game was called shoushiling. Li Rihua's book Note
-     of Liuyanzhai also mentions this game, calling it shoushiling , 
+     of Liuyanzhai also mentions this game, calling it shoushiling ,
      huozhitou, or huaquan.</p>
 
 
@@ -120,7 +121,7 @@
 
 </div>
       <div Class="container mx-auto flex w-100 h-96 bg-indigo-500 shadow-lg shadow-indigo-500 p-3 rounded-md m-7">
-           <img src="/RPC.JPG" alt="This picture taken for Wikipedia">
+           <img src="/RPC.png" alt="This picture was handmade">
       </div>
 
 </div>
@@ -134,15 +135,15 @@
 
 
   <div id="hidden" class="hidden display-win-pic flex space-x-2 justify-center p-2 shadow-lg m-2">
-    
+
      <label for="name">Enter Your Name: </label>
 
      <input class="text-black name"  type="text"  placeholder="your name">
 
-     <input value="Submit"  type="button" class="btn inline-block px-6 py-2.5 bg-gray-800 text-white 
-                                         font-medium text-xs leading-tight uppercase rounded-full shadow-md 
-                                         hover:bg-gray-900 hover:shadow-lg focus:bg-gray-900 focus:shadow-lg 
-                                         focus:outline-none focus:ring-0 active:bg-gray-900 active:shadow-lg 
+     <input value="Submit"  type="button" class="btn inline-block px-6 py-2.5 bg-gray-800 text-white
+                                         font-medium text-xs leading-tight uppercase rounded-full shadow-md
+                                         hover:bg-gray-900 hover:shadow-lg focus:bg-gray-900 focus:shadow-lg
+                                         focus:outline-none focus:ring-0 active:bg-gray-900 active:shadow-lg
                                          transition duration-150 ease-in-out">
   </div>
 
@@ -150,9 +151,9 @@
 
 <div class="display-win-pic flex space-x-2 justify-center p-8 shadow-lg ">
 
-         <div id="hidden3" class="hidden inline-block px-6 py-2.5 bg-red-600 text-white font-medium 
-                        text-xs leading-tight uppercase rounded shadow-lg hover:bg-red-700 hover:shadow-lg 
-                        focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 
+         <div id="hidden3" class="hidden inline-block px-6 py-2.5 bg-red-600 text-white font-medium
+                        text-xs leading-tight uppercase rounded shadow-lg hover:bg-red-700 hover:shadow-lg
+                        focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800
                         active:shadow-lg transition duration-150 ease-in-out p6"><img src="/paper.png"></div>
 
 
@@ -166,18 +167,18 @@
                <ul class="winMessage winMessage4">
                 Please Click<br>The START<br>
                Button<br>To Start<br>The Game
-              </ul>     
+              </ul>
         </div>
 
-        <div id="hidden2" class="hidden ai-score text-3xl item w-60 h-52 rounded shadow-lg bg-yellow-100 
+        <div id="hidden2" class="hidden ai-score text-3xl item w-60 h-52 rounded shadow-lg bg-yellow-100
                                  text-black text-xl text-center">
              AI<br>Total Score<br><p class="winMessage3"></p>
         </div>
 
 
-          <div id="hidden3" class="hidden inline-block px-6 py-2.5 bg-red-600 text-white font-medium 
-             text-xs leading-tight uppercase rounded shadow-lg hover:bg-red-700 hover:shadow-lg focus:bg-red-700 
-             focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition 
+          <div id="hidden3" class="hidden inline-block px-6 py-2.5 bg-red-600 text-white font-medium
+             text-xs leading-tight uppercase rounded shadow-lg hover:bg-red-700 hover:shadow-lg focus:bg-red-700
+             focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition
              duration-150 ease-in-out p6"><img src="/paper.png"></div>
 </div>
 
@@ -185,19 +186,19 @@
 
 <div id="hidden2" class="hidden flex space-x-2 justify-center p-8 shadow-lg">
 
-      <button type="button" Class="rock inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs 
-                           leading-tight uppercase rounded shadow-lg hover:bg-blue-700 hover:shadow-lg 
-                           focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 
+      <button type="button" Class="rock inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs
+                           leading-tight uppercase rounded shadow-lg hover:bg-blue-700 hover:shadow-lg
+                           focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800
                            active:shadow-lg transition duration-150 ease-in-out"><img src="/rock.png"></button>
 
-      <button type="button" Class="paper inline-block px-6 py-2.5 bg-purple-600 text-white font-medium text-xs 
-                            leading-tight uppercase rounded shadow-lg hover:bg-purple-700 hover:shadow-lg focus:bg-purple-700 
-                            focus:shadow-lg focus:outline-none focus:ring-0 active:bg-purple-800 active:shadow-lg transition 
+      <button type="button" Class="paper inline-block px-6 py-2.5 bg-purple-600 text-white font-medium text-xs
+                            leading-tight uppercase rounded shadow-lg hover:bg-purple-700 hover:shadow-lg focus:bg-purple-700
+                            focus:shadow-lg focus:outline-none focus:ring-0 active:bg-purple-800 active:shadow-lg transition
                             duration-150 ease-in-out"><img src="/paper.png"></button>
 
-      <button type="button"Class="scissor inline-block px-6 py-2.5 bg-green-500 text-white font-medium text-xs 
-                                   leading-tight uppercase rounded shadow-lg hover:bg-green-600 hover:shadow-lg 
-                                    focus:bg-green-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-700 
+      <button type="button"Class="scissor inline-block px-6 py-2.5 bg-green-500 text-white font-medium text-xs
+                                   leading-tight uppercase rounded shadow-lg hover:bg-green-600 hover:shadow-lg
+                                    focus:bg-green-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-700
                                    active:shadow-lg transition duration-150 ease-in-out"><img src="/scissor.png"></Button>
 
 </div>
@@ -215,15 +216,15 @@
 
   <div class="flex justify-around p-12">
 
-    <div class="shadow-lg p-6 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 
+    <div class="shadow-lg p-6 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110
          hover:bg-indigo-500 duration-300 text-white bg-cyan-500 shadow-lg shadow-cyan-500/50 rounded-md
           border-8 border-solid border-black">
-      
+
       <a href="https://moali5.github.io/cpsc349-p3/" target="_blank" class="group relative block bg-black">
-         
+
         <img alt="Developer"
-           src=""
-           class="absolute h-full w-full object-contain opacity-75 transition-opacity group-hover:opacity-50">
+           src="/ness.png"
+           class="mt-5 absolute h-full w-full object-contain opacity-75 transition-opacity group-hover:opacity-50">
 
           <div class="relative p-8">
             <p class="text-sm font-medium uppercase tracking-widest text-pink-500">Developer</p>
@@ -232,10 +233,14 @@
             <div class="mt-64">
 
               <div class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
-               
-               
+
+
                 <p class="text-sm text-white">
-                   your contribution goes here<br>
+                  - HTML+CSS<br>
+                   &nbsp;&nbsp; -Stylizing<br>
+
+                   &nbsp;&nbsp; Java Script<br>
+                 - Debugging code<br>
                 </p>
 
 
@@ -252,13 +257,13 @@
 
 
     <div
-        class="shadow-lg p-6 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 
-               hover:bg-indigo-500 duration-300 text-white bg-cyan-500 shadow-lg shadow-cyan-500/50 
+        class="shadow-lg p-6 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110
+               hover:bg-indigo-500 duration-300 text-white bg-cyan-500 shadow-lg shadow-cyan-500/50
               rounded-md border-8 border-solid border-black">
 
       <a href="https://moali5.github.io/cpsc349-p3/" target="_blank" class="group relative block bg-black">
 
-        <img alt="Developer" src="/mali.jpg"
+        <img alt="Developer" src="/yoshi.png"
              class="absolute h-full w-full object-contain opacity-75 transition-opacity group-hover:opacity-50">
 
         <div class="relative p-8">
@@ -269,8 +274,8 @@
 
           <div class="mt-64">
             <div class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
-              
-              
+
+
               <p class="text-sm text-white">
                 -Contributed in designing<br>
                   &nbsp;&nbsp; layout wireframing<br>
@@ -279,8 +284,8 @@
                 -Contributed implementing<br>
                   &nbsp;&nbsp; the JS CODE<br>
               </p>
-           
-           
+
+
             </div>
           </div>
         </div>
@@ -295,13 +300,13 @@
 
 <div class="flex justify-around p-12">
 
-    <div class="shadow-lg p-6 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 
-          hover:bg-indigo-500 duration-300 text-white bg-cyan-500 shadow-lg shadow-cyan-500/50 rounded-md 
+    <div class="shadow-lg p-6 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110
+          hover:bg-indigo-500 duration-300 text-white bg-cyan-500 shadow-lg shadow-cyan-500/50 rounded-md
           border-8 border-solid border-black">
 
        <a href="https://moali5.github.io/cpsc349-p3/" class="group relative block bg-black">
-         
-        <img alt="Developer" src="#"
+
+        <img alt="Developer" src="/metaknight.png"
               class="absolute h-full w-full object-contain opacity-75 transition-opacity group-hover:opacity-50">
 
             <div class="relative p-8">
@@ -311,11 +316,16 @@
 
                  <div class="mt-64">
                   <div class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
-                      
-                   
+
+
                     <p class="text-sm text-white">
-                      - your contribution goes here<br>
-                      
+                      -Contributed in designing<br>
+                  &nbsp;&nbsp; Pictures and Design of UI <br>
+                -Contributed in bugging<br>
+                  &nbsp;&nbsp; Local Test Cases.<br>
+                -Contributed github managment<br>
+                  &nbsp;&nbsp; updating team with github<br>
+
                     </p>
 
 
@@ -348,10 +358,10 @@
 <footer>
   <nav class="flex space-x-2 justify-center p-6">
     <div class="">
-        |&nbsp;  
-         <a class="hover:text-blue-300" href="#">HOME</a>  	&nbsp;|	 	&nbsp;
+        |&nbsp;
+        <!--<a class="hover:text-blue-300" href="#">HOME</a>  	&nbsp;|	 	&nbsp;
          <a class="hover:text-blue-300" href="#">About Us</a> 	&nbsp;| 	&nbsp;
-         <a class="hover:text-blue-300" href="">GAME</a>  &nbsp;| 	&nbsp;
+         <a class="hover:text-blue-300" href="">GAME</a>  &nbsp;| 	&nbsp;-->
          <button type="button" id="continue">continue</button> &nbsp;|
     </div>
  </nav>
@@ -359,7 +369,7 @@
 </footer>
 
 
-
+ <script type='module' src="/game.js"></script>
 </body>
 
 </html>

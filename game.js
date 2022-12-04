@@ -28,6 +28,7 @@ const btn3 = document.querySelector('#resetButton')
 const btn4 = document.querySelector('.button3')
 const hideBtn = document.querySelector('#hideButton')
 const btn2 = document.querySelector('.button2')
+const idContinue = document.querySelector('#continue')
 
 //=====================================================================
 
@@ -62,7 +63,7 @@ btn2.addEventListener('click', () => {
 
 //==================================================================
 
-btn4.addEventListener('click', () => 
+btn4.addEventListener('click', () =>
 {
   idIndexPage.classList.add('hidden')
   idAboutPage.classList.add('hidden')
@@ -81,21 +82,15 @@ btn4.addEventListener('click', () =>
 
 //==========================================================================
 /* try to use the local storage not working
-when i check the DOM look like its storing 
-the date. but one pulling the date 
-with localStorage.getItem() will work on it on saturday 
-see if you can fix the issue
-
-
-
-const idContinue = document.querySelector('#continue')
+when i check the DOM look like its storing
+the date. but one pulling the date
+with localStorage.getItem() will work on it on saturday
+see if you can fix the issue*/
+//const idContinue = document.querySelector('#continue')
 
 idContinue.addEventListener('click', () =>{
-
       id.classList.remove('hidden')
 
-
-  
     for(let i=0; i <id2.length; i++)
     {
       id2[i].classList.remove('hidden')
@@ -104,22 +99,38 @@ idContinue.addEventListener('click', () =>{
     {
       id3[i].classList.remove('hidden')
     }
-  
-    text1.value = localStorage.getItem('name')
-    totalAi = localStorage.getItem('ai')
-    totalHuman = localStorage.getItem('human')
-  
+
+    idIndexPage.classList.add('hidden')
+  idAboutPage.classList.add('hidden')
+  idGamePage.classList.remove('hidden')
+
+  hideBtn.classList.add('hidden')
+  btn3.classList.remove('hidden')
+
+  idIndexPage1.classList.add('hidden')
+  idAboutPage1.classList.add('hidden')
+  idGamePage1.classList.remove('hidden')
+
+    text1.value = localStorage.getItem("name")
+    totalAi =JSON.parse(localStorage.getItem("Ai"))
+    totalHuman = JSON.parse(localStorage.getItem("human"))
+
+    winMess1 = text1.value
+      pName.innerHTML = text1.value
+    winMess2.textContent = totalHuman
+
+     winMess3.textContent = totalAi
+
 
 })
 
-*/
 
 
 
 //===========================================================================
 
 
-btn3.addEventListener('click', () => 
+btn3.addEventListener('click', () =>
 {
 
 
@@ -135,11 +146,11 @@ btn3.addEventListener('click', () =>
     {
       id3[i].classList.add('hidden')
     }
-         totalAi = 0
+      /*   totalAi = 0
          totalHuman = 0
          winMess2.textContent = ""
          winMess3.textContent = ""
-         winMess1.textContent = ""
+         winMess1.textContent = ""*/
   }
   winMess4.textContent = "Please Enter"
   const li1 = document.createElement('li')
@@ -165,7 +176,7 @@ btn3.addEventListener('click', () =>
 
 rock.addEventListener('click', () => {
   const computer = Math.floor(Math.random() * 3) + 1
-  
+
   winImage[1].src= '/rock.png'
 
   if (id3[0].classList.contains('hidden')){
@@ -173,7 +184,7 @@ rock.addEventListener('click', () => {
  {
   id3[i].classList.remove('hidden')
  }}
-    
+
   if (computer === 1) {
     totalAi += 1
     totalHuman += 1
@@ -200,7 +211,7 @@ rock.addEventListener('click', () => {
 
   localStorage.setItem('Ai', totalAi)
   localStorage.setItem('human', totalHuman)
-  
+
 
 })
 
@@ -313,8 +324,8 @@ btn.addEventListener('click', () => {
 
 btn6.addEventListener('click', () =>
 {
- pName.innerHTML = text1.value 
- 
+ pName.innerHTML = text1.value
+
  localStorage.setItem('name', text1.value)
 
  for(let i=0; i <id2.length; i++)
@@ -335,4 +346,9 @@ btn6.addEventListener('click', () =>
  li3.textContent = "SCISSOR"
  winMess4.appendChild(li3)
 })
+/*
+text1.value = JSON.parse(localStorage.getItem("name"))
+totalAi = JSON.parse(localStorage.getItem("ai"))
+totalHuman = JSON.parse(localStorage.getItem("human"))
 
+*///====================== slide over
